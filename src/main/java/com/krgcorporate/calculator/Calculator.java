@@ -2,7 +2,6 @@ package com.krgcorporate.calculator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -12,4 +11,7 @@ public class Calculator {
 
     private double result;
 
+    public void reset() {
+        this.result = 0;
+    }
 }

@@ -2,6 +2,7 @@ package com.krgcorporate.calculator;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class CalculatorStepDefinitions {
@@ -23,4 +24,8 @@ public class CalculatorStepDefinitions {
         Assert.assertEquals(this.calculator.getResult(), result, 0);
     }
 
+    @When("I reset the calculator")
+    public void iResetTheCalculator() {
+        this.calculator.reset();
+    }
 }
